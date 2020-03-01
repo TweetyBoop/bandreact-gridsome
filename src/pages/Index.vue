@@ -6,7 +6,14 @@
 
     <h1>Hello, world!</h1>
 
+    <p>{{ $page.strapiArtists.edges.node }}</p>
+
+    <div v-for="edge in $page.strapiArtists.edges" :key="edge.node.id">
+      <p v-html="edge.node.Name"></p>
+    </div>
+
     <p>
+      <!--Name: {{$page.strapiArtists.name}} <br/>-->
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
     </p>
 
@@ -21,7 +28,10 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+      title: 'Band React',
+      meta: [
+          { name: 'author', content: 'Tanya Lamontagne' }
+      ]
   }
 }
 </script>
@@ -31,3 +41,17 @@ export default {
   margin-right: 1rem;
 }
 </style>
+
+<page-query>
+  query Artists ($page: Int) {
+    strapiArtists: allStrapiArtists (perPage: 2, page: $page) @paginate {
+      edges {
+        node {
+          Name
+          Description
+          Logo {id}
+        }
+      }
+    }
+  }
+</page-query>

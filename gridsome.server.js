@@ -4,13 +4,26 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const axios = require('axios')
 
 module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  })
+    api.loadSource(async actions => {
+        const { data } = await axios.get('http://localhost:1337/artists')
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
+        const collection = actions.addCollection({
+            typeName: 'Artists'
+        })
+
+        for (const artist of data) {
+            collection.addNode({
+                id: artist.id,
+                name: artist.name,
+                description: artist.description
+            })
+        }
+    })
+
+  // api.createPages(({ createPage }) => {
+  //   // Use the Pages API here: https://gridsome.org/docs/pages-api/
+  // })
 }
