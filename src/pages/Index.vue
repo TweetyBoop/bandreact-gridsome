@@ -5,12 +5,7 @@
     <g-image alt="Example image" src="~/favicon.png" width="135" />
 
     <h1>Hello, world!</h1>
-
-    <p>{{ $page.strapiArtists.edges.node }}</p>
-
-    <div v-for="edge in $page.strapiArtists.edges" :key="edge.node.id">
-      <p v-html="edge.node.Name"></p>
-    </div>
+    <Artist />
 
     <p>
       <!--Name: {{$page.strapiArtists.name}} <br/>-->
@@ -26,12 +21,16 @@
 </template>
 
 <script>
+import Artist from '~/components/Artist.vue'
+
 export default {
   metaInfo: {
-      title: 'Band React',
       meta: [
           { name: 'author', content: 'Tanya Lamontagne' }
       ]
+  },
+  components: {
+      Artist
   }
 }
 </script>
@@ -41,17 +40,3 @@ export default {
   margin-right: 1rem;
 }
 </style>
-
-<page-query>
-  query Artists ($page: Int) {
-    strapiArtists: allStrapiArtists (perPage: 2, page: $page) @paginate {
-      edges {
-        node {
-          Name
-          Description
-          Logo {id}
-        }
-      }
-    }
-  }
-</page-query>

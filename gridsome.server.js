@@ -23,7 +23,17 @@ module.exports = function (api) {
         }
     })
 
-  // api.createPages(({ createPage }) => {
-  //   // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  // })
+    api.createManagedPages(async ({ createPage }) => {
+        const { data } = await axios.get('http://localhost:1337/artists')
+
+        data.forEach(item => {
+            createPage({
+                path: `/artists/${item.id}`,
+                component: './src/templates/Artists/Artists.vue',
+                context: {
+                    artist: item
+                }
+            })
+        })
+    })
 }
