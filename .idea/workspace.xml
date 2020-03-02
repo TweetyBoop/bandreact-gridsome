@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a22c654-4a6a-4e3a-9353-8292fd50012d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Queries/QGenre.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Genre.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bandreact-gridsome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bandreact-gridsome.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gridsome.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gridsome.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gridsome.server.js" beforeDir="false" afterPath="$PROJECT_DIR$/gridsome.server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Artist.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Index.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,16 +19,16 @@
         <entry file="file://$PROJECT_DIR$/src/layouts/Default.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
-              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gridsome.config.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gridsome.config.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gridsome.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -40,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Index.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/Index.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -62,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/src/Queries/QGenre.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -127,12 +123,12 @@
         <option value="$PROJECT_DIR$/src/layouts/Default.vue" />
         <option value="$PROJECT_DIR$/src/components/Artist.vue" />
         <option value="$PROJECT_DIR$/src/templates/Artists/Artists.vue" />
-        <option value="$PROJECT_DIR$/gridsome.config.js" />
         <option value="$PROJECT_DIR$/src/Queries/QGenres.vue" />
         <option value="$PROJECT_DIR$/gridsome.server.js" />
         <option value="$PROJECT_DIR$/src/components/Genre.vue" />
         <option value="$PROJECT_DIR$/src/Queries/QGenre.vue" />
         <option value="$PROJECT_DIR$/src/pages/Index.vue" />
+        <option value="$PROJECT_DIR$/gridsome.config.js" />
       </list>
     </option>
   </component>
@@ -144,6 +140,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NamedScopeManager">
+    <scope name="Src" pattern="!file[bandreact-gridsome]:*/||file[bandreact-gridsome]:src//*" />
+  </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
@@ -153,8 +152,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="219" />
-    <option name="y" value="24" />
+    <option name="x" value="2783" />
+    <option name="y" value="185" />
     <option name="width" value="1457" />
     <option name="height" value="1027" />
   </component>
@@ -274,11 +273,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27476000" />
+    <option name="totallyTimeSpent" value="28182000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="219" y="24" width="1457" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="2783" y="185" width="1457" height="1027" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -605,16 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gridsome.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/Artists/Artists.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -635,14 +623,21 @@
     <entry file="file://$PROJECT_DIR$/src/layouts/Default.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Queries/QGenre.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -653,10 +648,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Index.vue">
+    <entry file="file://$PROJECT_DIR$/gridsome.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
