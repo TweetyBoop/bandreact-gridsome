@@ -5,12 +5,13 @@
     <g-image alt="Example image" src="~/favicon.png" width="135" />
 
     <h1>Hello, world!</h1>
-    <Artist />
 
     <p>
       <!--Name: {{$page.strapiArtists.name}} <br/>-->
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
     </p>
+
+    <Genres />
 
     <p class="home-links">
       <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
@@ -21,7 +22,7 @@
 </template>
 
 <script>
-import Artist from '~/components/Artist.vue'
+import Genres from '~/components/Genre.vue'
 
 export default {
   metaInfo: {
@@ -30,7 +31,7 @@ export default {
       ]
   },
   components: {
-      Artist
+      Genres
   }
 }
 </script>
