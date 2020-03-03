@@ -8,15 +8,24 @@ const axios = require('axios')
 
 module.exports = function (api) {
     api.loadSource(async actions => {
-        const collection = actions.addCollection('Genres')
-
+        const genreCollection = actions.addCollection('Genres')
         const { data } = await axios.get('http://localhost:1337/genres')
-
         for (const genre of data) {
-            collection.addNode({
+            genreCollection.addNode({
                 id: genre.id,
                 name: genre.Name,
                 artists: genre.artists
+            })
+        }
+    })
+
+    api.loadSource(async actions => {
+        const artistCollection = actions.addCollection('Artists')
+        const { data } = await axios.get('http://localhost:1337/artists')
+        for (const artist of data) {
+            artistCollection.addNode({
+                id: artist.id,
+                name: artist.Name
             })
         }
     })

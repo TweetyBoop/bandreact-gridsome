@@ -23,15 +23,15 @@
 </style>
 
 <static-query>
-    query Genres($page: Int) {
+query Genres($page: Int) {
     strapiGenres: allStrapiGenres(perPage: 5, page: $page) @paginate {
-    edges {
-    node {
-    id
-    Name
-    artists { Name }
+        edges {
+            node {
+                id
+                Name
+                artists { Name }
+            }
+        }
     }
-    }
-    }
-    }
+}
 </static-query>

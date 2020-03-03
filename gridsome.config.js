@@ -7,6 +7,8 @@
 module.exports = {
     siteName: 'Band React',
     siteUrl: '',
+    siteDescription: '',
+    titleTemplate: '',
     plugins: [
         {
             use: '@gridsome/source-strapi',

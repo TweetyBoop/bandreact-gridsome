@@ -15,11 +15,11 @@
 </template>
 
 <static-query>
-    query {
+query {
     metadata {
-    siteName
+        siteName
     }
-    }
+}
 </static-query>
 
 <style>
