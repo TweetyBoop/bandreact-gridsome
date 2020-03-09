@@ -5,6 +5,19 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: []
+    siteName: 'Band React',
+    siteUrl: '',
+    siteDescription: '',
+    titleTemplate: '',
+    plugins: [
+        {
+            use: '@gridsome/source-strapi',
+            options: {
+                apiURL: 'http://localhost:1337',
+                queryLimit: 1000, // Defaults to 100
+                contentTypes: ['artists', 'genres'],
+                plural: true,
+            }
+        }
+    ]
 }
