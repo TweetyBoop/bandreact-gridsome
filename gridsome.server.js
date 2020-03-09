@@ -5,8 +5,24 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 const axios = require('axios')
+const SpotifyWebApi = require('spotify-web-api-node')
+
 
 module.exports = function (api) {
+    // Track collection for Components
+    api.loadSource(async actions => {
+        const trackCollection = actions.addCollection('Tracks')
+        const { data } = await axios.get('http://localhost:1337/tracks')
+        for (const track of data) {
+            trackCollection.addNode({
+                id: track.id,
+                name: track.trackName,
+                trackInfo: track.trackInfo
+            })
+        }
+    })
+
+    // Genre collection for Components
     api.loadSource(async actions => {
         const genreCollection = actions.addCollection('Genres')
         const { data } = await axios.get('http://localhost:1337/genres')
@@ -19,6 +35,7 @@ module.exports = function (api) {
         }
     })
 
+    // Artist collection for Components
     api.loadSource(async actions => {
         const artistCollection = actions.addCollection('Artists')
         const { data } = await axios.get('http://localhost:1337/artists')
@@ -30,6 +47,7 @@ module.exports = function (api) {
         }
     })
 
+    // Artist Collection for artist page
     api.createManagedPages(async ({ createPage }) => {
         const { data } = await axios.get('http://localhost:1337/artists')
 

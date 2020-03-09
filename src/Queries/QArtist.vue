@@ -19,7 +19,10 @@
 </script>
 
 <style scoped>
-
+    .artist-list {
+        float:left;
+        margin-right: 50px;
+    }
 </style>
 
 <static-query>
