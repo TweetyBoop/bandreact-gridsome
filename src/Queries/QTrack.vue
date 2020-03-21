@@ -1,7 +1,7 @@
 <template>
     <div class="track-list">
         <span>
-            <slot v-bind:tracks="getTracks"></slot>
+            <slot :tracks="getTracks"></slot>
         </span>
     </div>
 </template>
@@ -9,6 +9,9 @@
 <script>
     export default {
         name: "Track",
+        props: {
+            tracks: {}
+        },
         computed: {
             getTracks() {
                 return this.$static.tracks &&
@@ -26,8 +29,8 @@
     }
 
   .album-image {
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
   }
 </style>
 
@@ -39,8 +42,7 @@ query Tracks {
       node {
         name
         trackInfo {
-          items {
-            external_urls{spotify}
+ 			external_urls{spotify}
             album {
               name
               artists {
@@ -50,8 +52,6 @@ query Tracks {
               }
               images {url}
             }
-          }
-
         }
       }
     }

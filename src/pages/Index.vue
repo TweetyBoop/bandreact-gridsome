@@ -3,6 +3,7 @@
         <h1>Hello, world of music enthusiasts!</h1>
 
         <div class="mainComponentContainer">
+            <SearchBarAddToStrapi/>
             <Tracks/>
             <Genres/>
             <Artists/>
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+    import SearchBarAddToStrapi from '~/components/SearchBarAddToStrapi.vue'
     import Tracks from '~/components/Track.vue'
     import Genres from '~/components/Genre.vue'
     import Artists from '~/components/Artist.vue'
@@ -23,6 +25,7 @@
             ]
         },
         components: {
+            SearchBarAddToStrapi,
             Tracks,
             Genres,
             Artists
